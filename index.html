@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iCoder - Heaven for Programmers </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/Contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topic
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
+<!-- login modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login to iCoder</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--  sign Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Get an iCoder account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="p.jpeg" height ="650px" width="20px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Welcome to iCoder</h1>
+          <p><h3>Clean Code always looks like it was writtern by someone who cares</h3></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="s.jpeg" height="650px" width="100px"class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>The Best Coading Blog</h1>
+          <p><h3>No matter which field of work you want to go in, it is of great importance to learn at least one 
+            programming language</p></h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="l.jpeg" height="650px" width="20px"class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>The Winner Blog</h1>
+          <p><h3>Software comes from heaven when you have good hardware..</h3></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+  <div class="container my-4">
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger"><h1>Digital Marketing</h1></strong>
+            <h5 class="mb-0"> Digital marketing,also called Online Marketing,is the promotion of brands to 
+              connect with potential customers using the internet and other forms of digital communication.</h5>
+            
+            <div class="mb-1 text-body-secondary">5 sep 2023</div>
+            <p class="card-text mb-auto"></p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300" src="dm.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"><h1>Web Development</h1></strong>
+            <h5 class="mb-0">Web development refers to the creating,building, and maintaining of website
+              It includes ascepts such as web design,web publishing ,web programming, and Data Base Management.</h5>
+            <div class="mb-1 text-body-secondary"> sep 6 2033</div>
+            <p class="mb-auto"></p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300" src="wb.jpeg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger"><h1>App Development</h1></strong>
+              <h5 class="mb-0">app development typically entail learning java programming, python or other object oriented
+                programmng language3 in a development environment,which is  a workspace where programmers can write
+              and make changes to code without permanently altering the finished app></h5>
+              <div class="mb-1 text-body-secondary">5 sep 2023</div>
+              <p class="card-text mb-auto"></p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="300" src="ap.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"><h1>Ethical Hacking</h1></strong>
+              <h5 class="mb-0">Ethical Hacking involves an authorized attempt to gain unauthorized access to a computer system,
+                application,or data. primary involves identifying  and fixing weakness to prevent cyber attack and 
+              protect infrastructure.  </h5>
+              
+              <div class="mb-1 text-body-secondary"> sep 6 2033</div>
+              <p class="mb-auto"></p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="300" src="e.jpeg" alt="">
+            </div>
+  
+          </div>
+        </div>
+  
+      </div><div class="container my-4">
+
+        
+    <!--footer-->
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">2023-2024 iCoder</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with iCoder, the world’s most
+            popular front-end open source toolkit.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
